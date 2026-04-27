@@ -1,60 +1,54 @@
-# Student Performance Analysis Project
+ <div align="center">
 
-## Project Overview
+# 📊 Student Performance Analysis Project
 
-This project is a data analysis project based on the **Students Performance Dataset**. The main goal of this project is to analyze how different factors such as gender, parental education level, lunch type, and test preparation course are related to student exam performance.
-
-The project uses **Pandas**, **NumPy**, and **Matplotlib** to clean the data, create new features, perform meaningful analysis, and generate visualizations.
-
----
-
-## Student Information
+### Data Analysis using Python, Pandas, NumPy and Matplotlib
 
 **Student Name:** Rifat Bhuiyan  
 **Student ID:** 22-49356-3  
 **Course:** Programming in Python  
 **Project Type:** Final Term Data Analysis Project  
 
+</div>
+
 ---
 
-## Dataset Information
+## 📌 Project Overview
 
-**Dataset Name:** Students Performance Dataset  
-**Dataset File:** `StudentsPerformance.csv`  
-**Dataset Source:** Kaggle  
-**Number of Rows:** 1000  
-**Number of Columns:** 8  
+This project analyzes the **Students Performance Dataset** to understand how different factors such as gender, parental education level, lunch type, and test preparation course are related to student exam performance.
 
-Each row represents one student record. The dataset contains student demographic and academic information.
+The project uses **Pandas**, **NumPy**, and **Matplotlib** for data cleaning, feature engineering, analysis, and visualization.
+
+---
+
+## 🗂️ Dataset Information
+
+| Item | Details |
+|---|---|
+| Dataset Name | Students Performance Dataset |
+| Dataset File | `StudentsPerformance.csv` |
+| Dataset Source | Kaggle |
+| Rows | 1000 |
+| Columns | 8 |
+| Main Topic | Student academic performance analysis |
 
 ### Main Columns
 
-- Gender
-- Race / Ethnicity
-- Parental Level of Education
-- Lunch
-- Test Preparation Course
-- Math Score
-- Reading Score
-- Writing Score
+`gender` • `race/ethnicity` • `parental level of education` • `lunch` • `test preparation course` • `math score` • `reading score` • `writing score`
 
 ---
 
-## Project Objectives
+## 🎯 Project Objectives
 
-The main objectives of this project are:
-
-1. To understand the overall performance pattern of students.
-2. To compare student performance based on gender.
-3. To analyze whether test preparation course completion affects average score.
-4. To examine the relationship between parental education level and student performance.
-5. To identify score relationships and unusual performance patterns.
+- Understand the overall performance pattern of students.
+- Compare student performance based on gender.
+- Analyze whether test preparation course completion affects average score.
+- Examine the relationship between parental education level and student performance.
+- Identify unusual or outlier performance records.
 
 ---
 
-## Research Questions
-
-This project answers the following analytical questions:
+## ❓ Research Questions
 
 1. Do students who completed the test preparation course perform better on average?
 2. Does parental level of education show any difference in student performance?
@@ -63,18 +57,20 @@ This project answers the following analytical questions:
 
 ---
 
-## Tools and Libraries Used
+## 🛠️ Tools and Libraries Used
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- VS Code
-- Git and GitHub
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-Programming-blue?style=for-the-badge&logo=python">
+  <img src="https://img.shields.io/badge/Pandas-Data%20Analysis-purple?style=for-the-badge&logo=pandas">
+  <img src="https://img.shields.io/badge/NumPy-Numerical%20Computing-orange?style=for-the-badge&logo=numpy">
+  <img src="https://img.shields.io/badge/Matplotlib-Visualization-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/VS%20Code-Editor-blue?style=for-the-badge&logo=visualstudiocode">
+  <img src="https://img.shields.io/badge/GitHub-Version%20Control-black?style=for-the-badge&logo=github">
+</p>
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 ```text
 Student_Performance_Project/
