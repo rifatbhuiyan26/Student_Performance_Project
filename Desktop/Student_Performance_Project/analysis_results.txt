@@ -1,0 +1,108 @@
+Student Performance Analysis Results
+============================================================
+
+Dataset Shape After Cleaning:
+(1000, 14)
+
+Overall Score Summary:
+        math_score  reading_score  writing_score  average_score
+mean      66.08900      69.169000      68.054000      67.770667
+median    66.00000      70.000000      69.000000      68.333333
+min        0.00000      17.000000      10.000000       9.000000
+max      100.00000     100.000000     100.000000     100.000000
+std       15.16308      14.600192      15.195657      14.257326
+
+Gender-wise Average Score:
+        math_score  reading_score  writing_score  average_score
+gender                                                         
+female   63.633205      72.608108      72.467181      69.569498
+male     68.728216      65.473029      63.311203      65.837483
+
+Test Preparation Course vs Average Score:
+                         average_score
+test_preparation_course               
+completed                    72.669460
+none                         65.038941
+
+Parental Education Level vs Average Score:
+                             average_score
+parental_level_of_education               
+master's degree                  73.598870
+bachelor's degree                71.923729
+associate's degree               69.569069
+some college                     68.476401
+some high school                 65.108007
+high school                      63.096939
+
+Lunch Type vs Average Score:
+              average_score
+lunch                      
+standard          70.837209
+free/reduced      62.199061
+
+Correlation Between Scores:
+               math_score  ...  average_score
+math_score       1.000000  ...       0.918746
+reading_score    0.817580  ...       0.970331
+writing_score    0.802642  ...       0.965667
+average_score    0.918746  ...       1.000000
+
+[4 rows x 4 columns]
+
+Performance Level Distribution:
+performance_level
+medium    517
+low       285
+high      198
+Name: count, dtype: int64
+
+Outlier Students:
+     gender  math_score  ...  average_score  average_score_z
+17   female          18  ...      26.000000        -2.931235
+55   female          33  ...      39.000000        -2.018966
+59   female           0  ...       9.000000        -4.124201
+61     male          39  ...      37.333333        -2.135924
+76     male          30  ...      26.000000        -2.931235
+84     male          42  ...      38.333333        -2.065749
+91     male          27  ...      32.333333        -2.486796
+114  female          99  ...      99.666667         2.238285
+145  female          22  ...      31.333333        -2.556971
+149    male         100  ...      97.666667         2.097936
+165  female          96  ...      98.666667         2.168111
+179  female          97  ...      99.000000         2.191502
+211    male          35  ...      30.000000        -2.650537
+217  female          34  ...      38.333333        -2.065749
+327    male          28  ...      23.333333        -3.118367
+338  female          24  ...      29.666667        -2.673928
+363  female          27  ...      31.000000        -2.580362
+424    male          41  ...      38.000000        -2.089141
+451  female         100  ...      96.333333         2.004370
+458  female         100  ...     100.000000         2.261677
+466  female          26  ...      31.666667        -2.533579
+528  female          29  ...      39.000000        -2.018966
+546  female          92  ...      96.333333         2.004370
+555  female          32  ...      34.666667        -2.323056
+566  female          92  ...      97.333333         2.074545
+594  female          92  ...      97.000000         2.051153
+596    male          30  ...      23.000000        -3.141758
+601  female          29  ...      29.333333        -2.697320
+625    male         100  ...      98.666667         2.168111
+683  female          29  ...      37.666667        -2.112532
+685  female          94  ...      97.666667         2.097936
+706    male          46  ...      38.666667        -2.042358
+712  female          98  ...      99.000000         2.191502
+717  female          96  ...      97.000000         2.051153
+787  female          19  ...      29.666667        -2.673928
+842  female          23  ...      34.333333        -2.346447
+855  female          97  ...      96.666667         2.027762
+895  female          32  ...      34.666667        -2.323056
+896    male          36  ...      30.666667        -2.603754
+903  female          93  ...      97.666667         2.097936
+916    male         100  ...     100.000000         2.261677
+957  female          92  ...      97.333333         2.074545
+962  female         100  ...     100.000000         2.261677
+970  female          89  ...      96.333333         2.004370
+980  female           8  ...      18.333333        -3.469239
+
+[45 rows x 6 columns]
+
