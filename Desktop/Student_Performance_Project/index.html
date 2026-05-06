@@ -1,54 +1,257 @@
-<!DOCTYPE html>
-<html>
+ <!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Student Performance Project</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Performance Analysis Project</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f7fb;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1f4e79;
+      color: white;
+      text-align: center;
+      padding: 35px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 30px auto;
+    }
+
+    .section {
+      background-color: white;
+      padding: 25px;
+      margin-bottom: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    h2 {
+      color: #1f4e79;
+      border-bottom: 2px solid #1f4e79;
+      padding-bottom: 8px;
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .info-box {
+      background-color: #eef6ff;
+      padding: 15px;
+      border-left: 5px solid #1f4e79;
+      margin-top: 15px;
+      border-radius: 5px;
+    }
+
+    .chart {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .chart img {
+      width: 90%;
+      max-width: 700px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 8px;
+      background-color: white;
+    }
+
+    .chart p {
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #1f4e79;
+      color: white;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    code {
+      background-color: #f1f1f1;
+      padding: 3px 6px;
+      border-radius: 4px;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Student Performance Analysis Project</h1>
 
-  <h2>Student Information</h2>
-  <p><b>Name:</b> Rifat Bhuiyan</p>
-  <p><b>ID:</b> 22-49356-3</p>
-  <p><b>Course:</b> Programming in Python</p>
+  <header>
+    <h1>Student Performance Analysis Project</h1>
+    <p>Python Data Analysis Project using Pandas, NumPy, and Matplotlib</p>
+  </header>
 
-  <h2>Project Overview</h2>
-  <p>
-    This project analyzes the Students Performance Dataset using Python,
-    Pandas, NumPy, and Matplotlib. The main goal is to understand how
-    gender, parental education level, lunch type, and test preparation
-    course affect student performance.
-  </p>
+  <div class="container">
 
-  <h2>Dataset Information</h2>
-  <ul>
-    <li>Dataset Name: Students Performance Dataset</li>
-    <li>Rows: 1000</li>
-    <li>Columns: 8</li>
-    <li>Source: Kaggle</li>
-  </ul>
+    <div class="section">
+      <h2>Student Information</h2>
+      <p><strong>Name:</strong> Rifat Bhuiyan</p>
+      <p><strong>ID:</strong> 22-49356-3</p>
+      <p><strong>Project:</strong> Student Performance Analysis</p>
+      <p><strong>Course:</strong> Programming in Python</p>
+    </div>
 
-  <h2>Project Files</h2>
-  <ul>
-    <li>StudentsPerformance.csv</li>
-    <li>student_analysis.py</li>
-    <li>cleaned_students_performance.csv</li>
-    <li>analysis_results.txt</li>
-    <li>figures folder</li>
-  </ul>
+    <div class="section">
+      <h2>Project Overview</h2>
+      <p>
+        This project analyzes student performance data using Python. The main goal
+        of this project is to understand how different factors such as gender,
+        parental education level, lunch type, and test preparation course affect
+        student exam scores.
+      </p>
 
-  <h2>Charts</h2>
-  <p>Charts are generated using Matplotlib and saved inside the figures folder.</p>
+      <p>
+        The dataset contains student scores in math, reading, and writing. Using
+        this dataset, the project performs data cleaning, feature engineering,
+        statistical analysis, and visualization.
+      </p>
+    </div>
 
-  <img src="Desktop/Student_Performance_Project/figures/chart_1_test_preparation_vs_average_score.png" width="500">
-  <br><br>
-  <img src="Desktop/Student_Performance_Project/figures/chart_2_parental_education_vs_average_score.png" width="500">
-  <br><br>
-  <img src="Desktop/Student_Performance_Project/figures/chart_3_reading_vs_writing_score.png" width="500">
-  <br><br>
-  <img src="Desktop/Student_Performance_Project/figures/chart_4_average_score_distribution.png" width="500">
-  <br><br>
-  <img src="Desktop/Student_Performance_Project/figures/chart_5_math_score_by_gender_boxplot.png" width="500">
-  <br><br>
-  <img src="Desktop/Student_Performance_Project/figures/chart_6_performance_level_distribution.png" width="500">
+    <div class="section">
+      <h2>Dataset Description</h2>
+      <ul>
+        <li><strong>Dataset Name:</strong> Students Performance Dataset</li>
+        <li><strong>Total Rows:</strong> 1000</li>
+        <li><strong>Total Columns:</strong> 8</li>
+        <li><strong>File Name:</strong> StudentsPerformance.csv</li>
+        <li><strong>Data Type:</strong> CSV File</li>
+      </ul>
+
+      <div class="info-box">
+        <p>
+          The dataset includes student information and exam scores. It is used to
+          analyze student academic performance based on different social and
+          educational factors.
+        </p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Dataset Columns</h2>
+      <ul>
+        <li>Gender</li>
+        <li>Race/Ethnicity</li>
+        <li>Parental Level of Education</li>
+        <li>Lunch</li>
+        <li>Test Preparation Course</li>
+        <li>Math Score</li>
+        <li>Reading Score</li>
+        <li>Writing Score</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Project Implementation Details</h2>
+      <p>
+        The project was implemented using Python in VS Code. The dataset was first
+        loaded using Pandas. Then missing values and duplicate values were checked.
+        New columns such as average score and performance level were created for
+        better analysis.
+      </p>
+
+      <ul>
+        <li>Loaded the dataset using Pandas</li>
+        <li>Checked missing values and duplicate records</li>
+        <li>Created average score column</li>
+        <li>Created performance level column</li>
+        <li>Performed group-based analysis</li>
+        <li>Generated charts using Matplotlib</li>
+        <li>Saved cleaned dataset and analysis results</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Project Files</h2>
+      <ul>
+        <li><code>StudentsPerformance.csv</code> - Original dataset</li>
+        <li><code>student_analysis.py</code> - Main Python analysis code</li>
+        <li><code>cleaned_students_performance.csv</code> - Cleaned dataset</li>
+        <li><code>analysis_results.txt</code> - Analysis output file</li>
+        <li><code>figures</code> - Folder containing saved charts</li>
+        <li><code>index.html</code> - Project live page for GitHub Pages</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Charts and Visual Analysis</h2>
+
+      <div class="chart">
+        <p>Chart 1: Test Preparation vs Average Score</p>
+        <img src="figures/chart_1_test_preparation_vs_average_score.png" alt="Test Preparation vs Average Score">
+      </div>
+
+      <div class="chart">
+        <p>Chart 2: Parental Education vs Average Score</p>
+        <img src="figures/chart_2_parental_education_vs_average_score.png" alt="Parental Education vs Average Score">
+      </div>
+
+      <div class="chart">
+        <p>Chart 3: Reading Score vs Writing Score</p>
+        <img src="figures/chart_3_reading_vs_writing_score.png" alt="Reading Score vs Writing Score">
+      </div>
+
+      <div class="chart">
+        <p>Chart 4: Average Score Distribution</p>
+        <img src="figures/chart_4_average_score_distribution.png" alt="Average Score Distribution">
+      </div>
+
+      <div class="chart">
+        <p>Chart 5: Math Score by Gender Boxplot</p>
+        <img src="figures/chart_5_math_score_by_gender_boxplot.png" alt="Math Score by Gender Boxplot">
+      </div>
+
+      <div class="chart">
+        <p>Chart 6: Performance Level Distribution</p>
+        <img src="figures/chart_6_performance_level_distribution.png" alt="Performance Level Distribution">
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Conclusion</h2>
+      <p>
+        From this project, student performance can be analyzed more clearly using
+        Python data analysis techniques. The charts help to understand the impact
+        of test preparation, parental education, gender, and score distribution.
+        This project shows how Python can be used for cleaning data, analyzing
+        information, and presenting results visually.
+      </p>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>Developed by Rifat Bhuiyan | Student Performance Analysis Project</p>
+  </footer>
+
 </body>
 </html>
